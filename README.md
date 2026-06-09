@@ -1,6 +1,5 @@
-# Plan International Canada - Website Clone
 
-Yeh Plan International Canada (plancanada.ca) ki ek HTML/CSS/JS replica hai.
+
 
 ## Files
 - `index.html` — Main homepage
@@ -10,7 +9,7 @@ Yeh Plan International Canada (plancanada.ca) ki ek HTML/CSS/JS replica hai.
 ## Kaise Use Karein
 1. Zip extract karo
 2. `index.html` browser mein open karo
-3. Internet connection chahiye (images aur fonts CDN se load hote hain)
+
 
 ## Features
 - Sticky header with nav
@@ -26,5 +25,4 @@ Yeh Plan International Canada (plancanada.ca) ki ek HTML/CSS/JS replica hai.
 - Responsive design (mobile friendly)
 
 ---
-Note: Yeh sirf educational/demo purpose ke liye banaya gaya hai.
-Original website: https://plancanada.ca
+
