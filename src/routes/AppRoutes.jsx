@@ -6,17 +6,21 @@ import GalleryPage from '../pages/Gallery/GalleryPage';
 import Donate from '../pages/Donate/Donate';
 import Volunteer from '../pages/Volunteer/Volunteer';
 import Contact from '../pages/Contact/Contact';
-
+import Medical from '../pages/Programs/Medical';
 function AppRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/programs" element={<Programs />} />
+
+        <Route path="/programs/medical" element={<Medical />} />
+
       <Route path="/gallery" element={<GalleryPage />} />
       <Route path="/donate" element={<Donate />} />
       <Route path="/volunteer" element={<Volunteer />} />
       <Route path="/contact" element={<Contact />} />
+     
     </Routes>
   );
 }
