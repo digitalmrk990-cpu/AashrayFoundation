@@ -1,69 +1,7 @@
-ashray/
-│
-├── public/
-│   ├── images/
-│   └── favicon.ico
-│
-├── src/
-│   │
-│   ├── assets/
-│   │   ├── images/
-│   │   └── icons/
-│   │
-│   ├── components/
-│   │   ├── Navbar/
-│   │   │   ├── Navbar.jsx
-│   │   │   └── Navbar.css
-│   │   │
-│   │   ├── Footer/
-│   │   │   ├── Footer.jsx
-│   │   │   └── Footer.css
-│   │   │
-│   │   ├── Hero/
-│   │   │   ├── Hero.jsx
-│   │   │   └── Hero.css
-│   │   │
-│   │   ├── Gallery/
-│   │   │   ├── Gallery.jsx
-│   │   │   └── Gallery.css
-│   │   │
-│   │   └── Common/
-│   │       ├── Button.jsx
-│   │       └── Button.css
-│   │
-│   ├── pages/
-│   │   ├── Home/
-│   │   │   ├── Home.jsx
-│   │   │   └── Home.css
-│   │   │
-│   │   ├── About/
-│   │   │   ├── About.jsx
-│   │   │   └── About.css
-│   │   │
-│   │   ├── Programs/
-│   │   ├── Gallery/
-│   │   ├── Donate/
-│   │   ├── Volunteer/
-│   │   └── Contact/
-│   │
-│   ├── routes/
-│   │   └── AppRoutes.jsx
-│   │
-│   ├── data/
-│   │   ├── galleryData.js
-│   │   ├── programsData.js
-│   │   └── teamData.js
-│   │
-│   ├── styles/
-│   │   ├── global.css
-│   │   ├── variables.css
-│   │   └── responsive.css
-│   │
-│   ├── App.jsx
-│   └── main.jsx
-│
-├── package.json
-└── vite.config.js
+for navigation part  i wanted add 
 
 
-take the reffrence of the four files in ashray folder .index.html , main ,js , styel.css
+Ashray for Life Foundation
+       Ray of Hope
+
+       make it professional and animative ngo wesbiste  with same as per Ashray word 
