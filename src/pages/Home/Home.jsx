@@ -92,6 +92,89 @@ function Home() {
         </div>
       </section>
 
+
+{/* about */}
+
+<section className="about-home-section">
+  <div className="container">
+
+    <div className="about-home-header">
+      <span className="about-badge">About Us</span>
+
+      <h2>
+        Building Hope, Transforming Lives
+      </h2>
+
+      <p>
+        Ashray for Life Foundation (AFLF) is dedicated to supporting
+        underprivileged children, orphans, daily wage workers’ families,
+        senior citizens, women, Divyang individuals, and the visually
+        impaired. Through education, healthcare, awareness programs,
+        and community development initiatives, we strive to create
+        opportunities that empower lives and strengthen communities.
+      </p>
+    </div>
+
+    <div className="about-home-grid">
+
+      <div className="about-content-card">
+        <h3>Who We Are</h3>
+
+        <p>
+          AFLF works tirelessly to improve the lives of vulnerable
+          communities by providing access to education, healthcare,
+          nutrition, clean drinking water, and social support.
+        </p>
+
+        <p>
+          We also create awareness about road safety, health,
+          hygiene, and important social issues, helping citizens
+          make informed decisions for a better future.
+        </p>
+
+        <div className="about-highlight">
+          Together, we can create a world where every child has
+          the opportunity to learn, grow, and thrive.
+        </div>
+      </div>
+
+      <div className="mission-vision-wrapper">
+
+        <div className="mv-card mission-card">
+          
+
+          <h3>Our Mission</h3>
+
+          <p>
+            To empower underprivileged children, orphans, and families
+            through education, health awareness, community support,
+            and access to clean drinking water while creating pathways
+            toward a brighter future.
+          </p>
+        </div>
+
+        <div className="mv-card vision-card">
+         
+
+          <h3>Our Vision</h3>
+
+          <p>
+            A world where every child receives quality education,
+            lives a healthy life, and has the opportunity to break
+            free from poverty, creating stronger and more vibrant
+            communities.
+          </p>
+        </div>
+        
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
       {/* SPOTLIGHT */}
       <section className="spotlight-wrapper">
         <div className="spotlight-header">
@@ -105,29 +188,7 @@ function Home() {
 
       <PlanCanadaSection />
 
-      {/* GET INVOLVED
-      <section className="get-involved">
-        <div className="container">
-          <h2>Get Involved</h2>
-          <p className="section-sub">
-            See how you can get involved with us today.
-          </p>
-
-          <div className="involve-grid">
-            {programsData.map((program) => (
-              <div key={program.id} className="involve-card">
-                <img src={program.image} alt={program.title} />
-                <h4>{program.title}</h4>
-                <p>{program.description}</p>
-                <Button variant="outline">
-                  {program.buttonText}
-                </Button>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
-
+      
       {/* STORIES */}
       <section className="stories">
         <div className="container">
