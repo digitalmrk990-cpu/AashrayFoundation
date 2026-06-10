@@ -6,7 +6,7 @@ import './Navbar.css';
 const navLinks = [
   { label: 'About Us', path: '/about' },
   {
-    label: 'Our Programs',
+    label: 'Our Projects',
     path: '/programs',
     dropdown: [
       { label: 'Education', path: '/programs/education' },
@@ -20,7 +20,7 @@ const navLinks = [
   },
   { label: 'Stories', path: '/gallery' },
   { label: 'Get Involved', path: '/volunteer' },
-  { label: 'Ways to Give', path: '/donate' },
+  // { label: 'Ways to Give', path: '/donate' },
 ];
 
 function Navbar() {

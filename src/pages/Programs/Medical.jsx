@@ -229,21 +229,7 @@ export default function Medical() {
 </section>
 
       {/* CTA */}
-      <section className="medical-cta">
-        <div className="container">
-          <h2>Join Our Lifesaving Mission</h2>
-
-          <p>
-            Your contribution can help fund surgeries, provide medical support,
-            and give hope to children and families facing critical health
-            challenges.
-          </p>
-
-          <a href="/donate" className="medical-btn">
-            Donate Now
-          </a>
-        </div>
-      </section>
+     
 
     </div>
   );
