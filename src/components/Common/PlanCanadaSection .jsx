@@ -309,26 +309,26 @@ const stories = [
     big: true,
     img: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=900&h=420&fit=crop",
     overlay: "Bend It Like Yawa",
-    title: "Girls in Football: A Referee's Story",
-    desc: "What does it take to become a female referee in a male-dominated field? Here's an inspiring story challenging gender norms and opening doors for others.",
+    title: "Providing Shelter, Dignity, and Hope",
+    desc: "Every individual deserves a safe place to live and the opportunity to thrive. Ashray Foundation works to support vulnerable communities with care, compassion, and essential resources",
   },
   {
     img: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&h=300&fit=crop",
     overlay: "Sudan: A Neglected Crisis",
-    title: "Sudan: What's Happening Now?",
-    category: "Crisis Response & Climate",
+    title: "Creating Brighter Futures Through Education",
+    category: "Education & Learning",
   },
   {
     img: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=600&h=300&fit=crop",
     overlay: "Climate Change Impact",
-    title: "The Unfair Ways Climate Crisis Affects Girls and Women",
-    category: "Crisis Response & Climate",
+    title: "Empowering Women, Strengthening Communities",
+    category: "Women & Empowerment",
   },
   {
     img: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&h=300&fit=crop",
     overlay: "Forest Conservation",
-    title: "Female-led conservation group fighting deforestation",
-    category: "Equality & Rights",
+    title: "Together We Create Lasting Change",
+    category: "Community & Volunteering",
   },
 ];
 
@@ -440,7 +440,7 @@ export default function PlanCanadaSection() {
         </section>
 
         {/* STORIES */}
-        <section style={{ background: "#fff", borderRadius: 18, padding: 40 }}>
+        <section style={{ background: "#c6dbef", borderRadius: 18, padding: 40 }}>
           <h2 style={{ fontSize: 30, fontWeight: 800, marginBottom: 30 }}>
             Our Stories
           </h2>

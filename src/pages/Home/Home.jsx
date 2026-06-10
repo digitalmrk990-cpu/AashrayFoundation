@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect} from "react";
 import Hero from "../../components/Hero/Hero";
 import Gallery from "../../components/Gallery/Gallery";
 import Button from "../../components/Common/Button";
@@ -65,6 +65,24 @@ function Home() {
         btn.style.background = "";
       }, 3000);
     }
+
+    const [startIndex, setStartIndex] = useState(0);
+
+const nextLogos = () => {
+  setStartIndex((prev) =>
+    prev + 5 >= partnerLogos.length ? 0 : prev + 5
+  );
+};
+
+const prevLogos = () => {
+  setStartIndex((prev) =>
+    prev - 5 < 0 ? Math.max(partnerLogos.length - 5, 0) : prev - 5
+  );
+};
+
+const visibleLogos = partnerLogos.slice(startIndex, startIndex + 5);
+
+
   };
 
   return (
@@ -189,7 +207,7 @@ function Home() {
       <PlanCanadaSection />
 
       
-      {/* STORIES */}
+      {/* STORIES
       <section className="stories">
         <div className="container">
           <h2>Our Stories</h2>
@@ -209,6 +227,14 @@ function Home() {
           </div>
         </div>
       </section>
+ */}
+
+            
+
+
+
+
+
 
       {/* DONATE */}
       <section className="donate-cta">
