@@ -36,12 +36,12 @@
 }
 
 .join-tax {
-  background: #2e2c8a;
+  background: #c6dbef;
   padding: 16px 0;
   text-align: center;
 }
 .join-tax p {
-  color: #fff;
+  color: #000;
   font-size: 0.95rem;
   font-weight: 600;
   margin: 0;
