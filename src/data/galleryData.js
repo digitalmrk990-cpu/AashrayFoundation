@@ -75,24 +75,20 @@ const galleryData = [
   {
     id: 1,
     title: "Vidhyalay",
-    images: [
-      "https://source.unsplash.com/600x600/?school,education",
-      "https://source.unsplash.com/600x600/?classroom,students",
-      "https://source.unsplash.com/600x600/?books,study",
-      "https://source.unsplash.com/600x600/?teacher,school",
-      "https://source.unsplash.com/600x600/?learning,children",
-    ],
+    // images: [
+    //  "/images/gallery/school1.jpg"
+    // ],
+    url : '/images/gallery/school1.jpg',
     description: "We ensure quality education for every child.",
+    link: '#',
+    // urgent: true,
   },
 
   {
     id: 2,
     title: "Nari Tarang",
     images: [
-      "https://source.unsplash.com/600x600/?women,empowerment",
-      "https://source.unsplash.com/600x600/?women,work",
-      "https://source.unsplash.com/600x600/?self-help,women",
-      "https://source.unsplash.com/600x600/?confidence,women",
+         "/images/gallery/naritarang1.jpg",
     ],
     description: "Empowering women with skills and confidence.",
   },
@@ -101,44 +97,34 @@ const galleryData = [
     id: 3,
     title: "Zero Hunger Drive",
     images: [
-      "https://source.unsplash.com/600x600/?food,distribution",
-      "https://source.unsplash.com/600x600/?hunger,meal",
-      "https://source.unsplash.com/600x600/?children,food",
-      "https://source.unsplash.com/600x600/?community,feeding",
+    "/images/gallery/zerohunger1.jpg",
     ],
     description: "No one should sleep hungry.",
   },
 
   {
     id: 4,
-    title: "Jal Project",
+    title: "Jal",
     images: [
-      "https://source.unsplash.com/600x600/?water,clean",
-      "https://source.unsplash.com/600x600/?river,water",
-      "https://source.unsplash.com/600x600/?drinking-water",
-      "https://source.unsplash.com/600x600/?well,water",
+     "/images/gallery/jalproject1.jpg",
     ],
     description: "Clean water for healthy life.",
   },
 
   {
     id: 5,
-    title: "Ashray",
+    title: "Ashray Ka Aashra",
     images: [
-      "https://source.unsplash.com/600x600/?orphan,children",
-      "https://source.unsplash.com/600x600/?care,children",
-      "https://source.unsplash.com/600x600/?shelter,kids",
+     "/images/gallery/ashray1.jpg",
     ],
     description: "Care and hope for orphan children.",
   },
 
   {
     id: 6,
-    title: "Life-Line (Medical)",
+    title: "Life-Line",
     images: [
-      "https://source.unsplash.com/600x600/?hospital,doctor",
-      "https://source.unsplash.com/600x600/?medical,care",
-      "https://source.unsplash.com/600x600/?health,checkup",
+       "/images/gallery/lifeline1.jpg",
     ],
     description: "Life-saving medical support.",
   },
@@ -147,23 +133,18 @@ const galleryData = [
     id: 7,
     title: "Sahara",
     images: [
-      "https://source.unsplash.com/600x600/?elderly,care",
-      "https://source.unsplash.com/600x600/?old-age,home",
-      "https://source.unsplash.com/600x600/?senior,people",
-      "https://source.unsplash.com/600x600/?support,elderly",
+    "/images/gallery/sahara1.jpg",
     ],
     description: "Dignity and care for elders.",
   },
 
   {
     id: 8,
-    title: "Jal Project Extension",
+    title: " Pashupremi",
     images: [
-      "https://source.unsplash.com/600x600/?water,plant",
-      "https://source.unsplash.com/600x600/?irrigation,farm",
-      "https://source.unsplash.com/600x600/?rainwater,harvesting",
+      "/images/gallery/pashu1.jpg",
     ],
-    description: "Sustainable water solutions.",
+    description: "Compassion for Every Paw.",
   },
 ];
 
