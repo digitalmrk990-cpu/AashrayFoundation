@@ -20,7 +20,7 @@ const navLinks = [
   },
    { label: 'Appeals', path: '/Appeals',
       dropdown: [
-      { label: 'Medical', path: '/Appeals/AppealsMedical' },
+      { label: 'Medical', path: '/Appeals/Medical' },
       { label: 'Education', path: '/Appeals/Appeals-education' },
       { label: 'Food Grains', path: '/Appeals/Appeals-food-grains' },
     ],

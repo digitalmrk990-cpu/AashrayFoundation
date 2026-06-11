@@ -9,7 +9,7 @@ import Contact from '../pages/Contact/Contact';
 import Medical from '../pages/Programs/Medical';
 import Education from '../pages/Programs/Education';
 import HungerDrive from '../pages/Programs/HungerDrive';
-import AppealsMedical from '../pages/Appeals/AppealsMedical';
+import MedicalSupport from '../pages/Appeals/AppealsMedical';
 // import Appealsfoodgrains from '../pages/Appeals/Appealsfoodgrains';
 // import Appealseducation from '../pages/Appeals/Appealseducation';
 
@@ -28,7 +28,7 @@ function AppRoutes() {
       <Route path="/programs/old-age-home" element={<Programs />} />
 
       {/* APPEALS */}
-      <Route path="/appeals/medical" element={<AppealsMedical />} />
+      <Route path="/Appeals/Medical" element={<MedicalSupport />} />
       {/* <Route path="/appeals/foodgrains" element={<Appealsfoodgrains />} /> */}
       {/* <Route path="/appeals/education" element={<Appealseducation />} /> */}
 

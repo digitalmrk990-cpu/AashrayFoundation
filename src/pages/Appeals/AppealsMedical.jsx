@@ -1,4 +1,3 @@
-import { useEffect, useRef } from "react";
 import "./AppealsMedical.css";
 
 const cases = [
@@ -45,7 +44,7 @@ const MedicalSupport = () => {
       <section className="medical-about">
         <h2>About Project LIFE-LINE</h2>
         <p>
-          :contentReference[oaicite:0]{index=0} (AFLF)
+          Ashray for Life Foundation (AFLF)
           is committed to ensuring that no life is lost due to lack of medical
           funds. We step in for critical surgeries, emergency treatments, and
           hospitalization support for underprivileged families.
