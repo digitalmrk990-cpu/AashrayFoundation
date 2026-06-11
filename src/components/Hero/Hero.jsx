@@ -18,7 +18,7 @@ function Hero() {
           Help girls overcome barriers to education, health, and safety.<br/>
           A better world for them means a better world for all of us.
         </p>
-        <Button variant="donate-lg">Donate now</Button>
+        <Button variant="donate-lg" href="/donate">Donate now</Button>
       </div>
     </section>
   );

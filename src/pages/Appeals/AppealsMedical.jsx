@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./AppealsMedical.css";
 
 const cases = [
@@ -96,7 +97,7 @@ const MedicalSupport = () => {
               <p className="cost">Treatment Cost: {item.cost}</p>
               <p className="desc">{item.desc}</p>
 
-              <button className="donate-btn">Donate Now</button>
+              <Link to="/donate" className="donate-btn">Donate Now</Link>
             </div>
           ))}
         </div>

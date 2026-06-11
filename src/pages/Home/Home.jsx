@@ -1,4 +1,5 @@
 import { useEffect} from "react";
+import { Link } from "react-router-dom";
 import Hero from "../../components/Hero/Hero";
 import Button from "../../components/Common/Button";
 import galleryData from "../../data/galleryData";
@@ -86,7 +87,7 @@ function Home() {
             </p>
 
             <div className="hero-buttons">
-              <a href="#" className="btn-primary">Donate Now</a>
+              <Link to="/donate" className="btn-primary">Donate Now</Link>
               {/* <a href="#" className="btn-secondary">Learn More</a> */}
             </div>
           </div>

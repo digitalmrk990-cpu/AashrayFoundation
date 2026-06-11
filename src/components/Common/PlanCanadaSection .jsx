@@ -245,6 +245,7 @@
 //   );
 // }
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "../../pages/Home/Home.css";
 
 const getInvolvedCards = [
@@ -373,21 +374,23 @@ export default function PlanCanadaSection() {
                 <p style={{ fontSize: 14, color: "#555", lineHeight: 1.6 }}>
                   {card.desc}
                 </p>
-                <button
-                  style={{
-                    marginTop: 10,
-                    background: card.btnColor,
-                    color: "#fff",
-                    border: "none",
-                    borderRadius: 25,
-                    padding: "10px 26px",
-                    fontSize: 14,
-                    fontWeight: 600,
-                    cursor: "pointer",
-                  }}
-                >
-                  {card.btn}
-                </button>
+                <Link to="/donate" style={{ textDecoration: "none" }}>
+                  <button
+                    style={{
+                      marginTop: 10,
+                      background: card.btnColor,
+                      color: "#fff",
+                      border: "none",
+                      borderRadius: 25,
+                      padding: "10px 26px",
+                      fontSize: 14,
+                      fontWeight: 600,
+                      cursor: "pointer",
+                    }}
+                  >
+                    {card.btn}
+                  </button>
+                </Link>
               </div>
             ))}
           </div>
@@ -460,9 +463,11 @@ export default function PlanCanadaSection() {
               <div style={{ padding: 20 }}>
                 <h3 style={{ fontSize: 20 }}>{story.title}</h3>
                 <p style={{ fontSize: 14, color: "#555" }}>{story.desc}</p>
-                <button style={{ background: "#2e2c8a", color: "#fff", padding: "10px 18px", borderRadius: 20 }}>
-                  Donate Now
-                </button>
+                <Link to="/donate" style={{ textDecoration: "none" }}>
+                  <button style={{ background: "#2e2c8a", color: "#fff", padding: "10px 18px", borderRadius: 20 }}>
+                    Donate Now
+                  </button>
+                </Link>
               </div>
             </div>
           ))}

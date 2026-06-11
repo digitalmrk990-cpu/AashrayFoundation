@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./EducationSupport.css";
 
 const programs = [
@@ -101,7 +102,7 @@ const EducationSupport = () => {
 
                 <p>{item.desc}</p>
 
-                <button>Donate Now</button>
+                <Link to="/donate">Donate Now</Link>
               </div>
             </div>
           ))}
