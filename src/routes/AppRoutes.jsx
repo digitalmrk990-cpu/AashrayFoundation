@@ -10,8 +10,8 @@ import Medical from '../pages/Programs/Medical';
 import Education from '../pages/Programs/Education';
 import HungerDrive from '../pages/Programs/HungerDrive';
 import AppealsMedical from '../pages/Appeals/AppealsMedical';
-import Appealsfoodgrains from '../pages/Appeals/Appealsfoodgrains';
-import Appealseducation from '../pages/Appeals/Appealseducation';
+// import Appealsfoodgrains from '../pages/Appeals/Appealsfoodgrains';
+// import Appealseducation from '../pages/Appeals/Appealseducation';
 
 function AppRoutes() {
   return (
@@ -29,8 +29,8 @@ function AppRoutes() {
 
       {/* APPEALS */}
       <Route path="/appeals/medical" element={<AppealsMedical />} />
-      <Route path="/appeals/foodgrains" element={<Appealsfoodgrains />} />
-      <Route path="/appeals/education" element={<Appealseducation />} />
+      {/* <Route path="/appeals/foodgrains" element={<Appealsfoodgrains />} /> */}
+      {/* <Route path="/appeals/education" element={<Appealseducation />} /> */}
 
       <Route path="/gallery" element={<GalleryPage />} />
       <Route path="/donate" element={<Donate />} />
