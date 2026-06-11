@@ -408,7 +408,7 @@ export default function PlanCanadaSection() {
                 onMouseLeave={() => setHovered(null)}
                 style={{
                   background: card.bg,
-                  borderRadius: 12,
+                  borderRadius:  "40px 0px 40px 0px",
                   padding: 22,
                   display: "flex",
                   gap: 16,
@@ -440,7 +440,7 @@ export default function PlanCanadaSection() {
         </section>
 
         {/* STORIES */}
-        <section style={{ background: "#c6dbef", borderRadius: 18, padding: 40 }}>
+        <section style={{ background: "#c6dbef", borderRadius:"60px 0px 60px 0px", padding: 40 }}>
           <h2 style={{ fontSize: 30, fontWeight: 800, marginBottom: 30 }}>
             Our Stories
           </h2>
@@ -450,17 +450,18 @@ export default function PlanCanadaSection() {
               key={i}
               style={{
                 display: "flex",
-                borderRadius: 12,
+                borderRadius: "60px 0px 60px 0px",
                 overflow: "hidden",
                 marginBottom: 20,
               }}
             >
-              <img src={story.img} style={{ width: "40%" }} />
+              <img src={story.img} style={{width: "40%",borderRadius: "60px 0px 60px 0px", objectFit: "cover"}}
+/>
               <div style={{ padding: 20 }}>
                 <h3 style={{ fontSize: 20 }}>{story.title}</h3>
                 <p style={{ fontSize: 14, color: "#555" }}>{story.desc}</p>
-                <button style={{ background: "#0072CE", color: "#fff", padding: "8px 18px", borderRadius: 20 }}>
-                  Read more
+                <button style={{ background: "#2e2c8a", color: "#fff", padding: "10px 18px", borderRadius: 20 }}>
+                  Donate Now
                 </button>
               </div>
             </div>
@@ -468,8 +469,9 @@ export default function PlanCanadaSection() {
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 16 }}>
             {stories.filter(s => !s.big).map((story, i) => (
-              <div key={i} style={{ background: "#f9f9f9", borderRadius: 12 }}>
-                <img src={story.img} style={{ width: "100%" }} />
+              <div key={i} style={{ background: "#f9f9f9", borderRadius: "60px 0px 60px 0px" }}>
+                <img src={story.img}style={{width: "100%",borderRadius: "60px 0px 60px 0px",objectFit: "cover"  }}
+/>
                 <div style={{ padding: 12 }}>
                   <h4>{story.title}</h4>
                   <p style={{ fontSize: 12, color: "#777" }}>{story.category}</p>

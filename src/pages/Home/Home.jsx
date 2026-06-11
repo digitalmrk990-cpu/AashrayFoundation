@@ -236,14 +236,14 @@ const visibleLogos = partnerLogos.slice(startIndex, startIndex + 5);
 
 
 
-      {/* DONATE */}
+      {/* DONATE
       <section className="donate-cta">
         <div className="container">
           <h2>Donate today</h2>
           <p>Help advance children's rights and equality for girls today.</p>
           <Button variant="donate-lg">Donate now</Button>
         </div>
-      </section>
+      </section> */}
 
       {/* NEWSLETTER */}
       <section className="newsletter">

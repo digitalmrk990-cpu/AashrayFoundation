@@ -18,7 +18,15 @@ const navLinks = [
       { label: 'Old Age Home (Sahara)', path: '/programs/old-age-home' },
     ],
   },
-  { label: 'Stories', path: '/gallery' },
+   { label: 'Appeals', path: '/Appeals',
+      dropdown: [
+      { label: 'Medical', path: '/Appeals/AppealsMedical' },
+      { label: 'Education', path: '/Appeals/Appeals-education' },
+      { label: 'Food Grains', path: '/Appeals/Appeals-food-grains' },
+    ],
+   },
+
+  { label: 'Gallery', path: '/gallery' },
   { label: 'Get Involved', path: '/volunteer' },
   // { label: 'Ways to Give', path: '/donate' },
 ];

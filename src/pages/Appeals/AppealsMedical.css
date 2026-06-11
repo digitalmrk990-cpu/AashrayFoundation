@@ -1,0 +1,120 @@
+.medical-page {
+  background: #eff3ff;
+  font-family: Arial, sans-serif;
+}
+
+/* HERO */
+.medical-hero {
+  height: 60vh;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("/images/medical-hero.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.medical-hero h1 {
+  font-size: 42px;
+  color: #f5a623;
+}
+
+.medical-hero h4 {
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+/* SECTIONS */
+section {
+  padding: 60px 10%;
+}
+
+/* ABOUT */
+.medical-about h2,
+.medical-mission h2,
+.appeal-section h2 {
+  color: #1c2b4a;
+  margin-bottom: 15px;
+}
+
+.medical-about p {
+  color: #444;
+  line-height: 1.6;
+}
+
+/* MISSION */
+.mission-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.mission-box {
+  background: #fff;
+  padding: 25px;
+  border-left: 5px solid #f5a623;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* CARDS */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  border-top: 4px solid #f5a623;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #1c2b4a;
+}
+
+.cost {
+  font-weight: bold;
+  color: #f5a623;
+}
+
+.desc {
+  margin: 10px 0;
+  color: #555;
+}
+
+.donate-btn {
+  background: #f5a623;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* CTA */
+.cta {
+  text-align: center;
+  background: #1c2b4a;
+  color: #fff;
+}
+
+.cta h2 {
+  color: #f5a623;
+}
+
+.cta button {
+  margin-top: 15px;
+  background: #f5a623;
+  border: none;
+  padding: 12px 25px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 6px;
+}

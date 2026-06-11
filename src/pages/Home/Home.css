@@ -285,30 +285,14 @@
 
 
 
-/* DONATE CTA */
-.donate-cta {
-  background: linear-gradient(135deg, #1a1a2e, #0f3460);
-  color: #fff;
-  padding: 80px 0;
-  text-align: center;
-}
-.donate-cta h2 {
-  font-family: var(--font-display);
-  font-size: 2.6rem;
-  margin-bottom: 14px;
-}
-.donate-cta p {
-  font-size: 1.1rem;
-  opacity: 0.85;
-  margin-bottom: 32px;
-}
+
 
 /* NEWSLETTER */
 .newsletter {
-  background: var(--off-white);
+  background: #c6dbef;
   padding: 60px 0;
   text-align: center;
-  border-top: 3px solid var(--red);
+  border-top: 3px solid #4a6fa5;
 }
 .newsletter h3 {
   font-family: var(--font-display);
@@ -337,9 +321,9 @@
   outline: none;
   transition: border-color 0.2s;
 }
-.newsletter-form input:focus { border-color: var(--red); }
+.newsletter-form input:focus { border-color: #2e2c8a; }
 .newsletter-form button {
-  background: var(--red);
+  background: #2e2c8a;
   color: #fff;
   border: none;
   padding: 12px 24px;
@@ -350,7 +334,7 @@
   border-radius: 0 4px 4px 0;
   transition: background 0.2s;
 }
-.newsletter-form button:hover { background: var(--dark-red); }
+.newsletter-form button:hover { background: #4a6fa5; }
 
 /* MAIN WRAPPER */
 .plan-wrapper {

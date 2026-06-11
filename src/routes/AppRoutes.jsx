@@ -8,6 +8,9 @@ import Volunteer from '../pages/Volunteer/Volunteer';
 import Contact from '../pages/Contact/Contact';
 import Medical from '../pages/Programs/Medical';
 import Education from '../pages/Programs/Education';
+import AppealsMedical from '../pages/Appeals/AppealsMedical';
+
+
 
 function AppRoutes() {
   return (
@@ -21,11 +24,19 @@ function AppRoutes() {
       <Route path="/programs/zero-hunger-drive" element={<Programs />} />
       <Route path="/programs/jal-project" element={<Programs />} />
       <Route path="/programs/orphanage" element={<Programs />} />
-      <Route path="/programs/old-age-home" element={<Programs />} />
+      <Route path="/programs/old-age-home" element={<Programs />}
+      />
+
+        {/* APPEALS */}
+      <Route path="/Appeals/AppealsMedical" element={<AppealsMedical />}
+      
+      />
       <Route path="/gallery" element={<GalleryPage />} />
       <Route path="/donate" element={<Donate />} />
       <Route path="/volunteer" element={<Volunteer />} />
       <Route path="/contact" element={<Contact />} />
+     
+     
     </Routes>
   );
 }
