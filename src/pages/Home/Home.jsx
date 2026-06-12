@@ -153,7 +153,7 @@ function Home() {
 
 
 <section class="bsct-home-hero-section">
-  <img src="/images/banner.jpg" 
+  <img src="/images/banner.png" 
     alt=""/>
 </section>
 

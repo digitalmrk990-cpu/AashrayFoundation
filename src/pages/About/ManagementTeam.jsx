@@ -4,14 +4,13 @@ import "./ManagementTeam.css";
 const teamMembers = [
   { id: 1, name: "Mr. Naresh Bhanushali", role: "President", photo: "/images/team/naresh-bhanushali.jpg" },
   { id: 2, name: "Mr. Mihir Shah", role: "Secretary", photo: "/images/team/mihir-shah.jpg" },
-  { id: 3, name: "Mr. Jatin Nirmal", role: "Project Coordinator", photo: "/images/team/jatin-nirmal.jpg" },
   { id: 4, name: "Mrs. Prachi Dhanawade", role: "Accounts Executive", photo: "/images/team/prachi-dhanawade.jpg" },
-  { id: 5, name: "Mr. Deepak Karkera", role: "Fundraising Head", photo: "/images/team/deepak-karkera.jpg" },
-  { id: 6, name: "Ms. Deepa Gupta", role: "Core Team Member", photo: "/images/team/deepa-gupta.jpg" },
-  { id: 7, name: "Mrs. Kshitija Jadhav", role: "Core Team Member", photo: "/images/team/kshitija-jadhav.jpg" },
-  { id: 8, name: "Mrs. Varsha Sakhariya", role: "Project Head", photo: "/images/team/varsha-sakhariya.jpg" },
-  { id: 9, name: "Mrs. Pooja Pal", role: "Core Team Member", photo: "/images/team/pooja-pal.jpg" },
-  { id: 10, name: "Miss. Hiral Waghela", role: "Core Team Member", photo: "/images/team/hiral-waghela.jpg" },
+  { id: 5, name: "Mr. Deepak Karkera", role: "Team Member", photo: "/images/team/deepak-karkera.jpg" },
+  { id: 6, name: "Ms. Deepa Gupta", role: "Team Member", photo: "/images/team/deepa-gupta.jpg" },
+  { id: 7, name: "Mrs. Kshitija Jadhav", role: "Team Member", photo: "/images/team/kshitija-jadhav.jpg" },
+  { id: 8, name: "Mrs. Varsha Sakhariya", role: "Team Member", photo: "/images/team/varsha-sakhariya.jpg" },
+  { id: 9, name: "Mrs. Pooja Pal", role: "Team Member", photo: "/images/team/pooja-pal.jpg" },
+  { id: 10, name: "Miss. Hiral Waghela", role: "Team Member", photo: "/images/team/hiral-waghela.jpg" },
 ];
 
 const initials = (name) => {
