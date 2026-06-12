@@ -94,10 +94,10 @@ function GalleryPage() {
         <h2>Ashray Ka Aashra</h2>
 
           <div className="img-grid four">
-          <div><img src="/images/gallery/sahara1.jpg" /></div>
-          <div><img src="/images/gallery/sahara2.jpg" /></div>
-          <div><img src="/images/gallery/sahara3.jpg" /></div>
-          <div><img src="/images/gallery/sahara4.jpg" /></div>
+          <div><img src="/images/Ashray/img1.jpg" /></div>
+          <div><img src="/images/Ashray/img2.jpg" /></div>
+          <div><img src="/images/Ashray/img3.jpg" /></div>
+          <div><img src="/images/Ashray/img4.jpg" /></div>
         </div>
       </section>
 
@@ -108,9 +108,9 @@ function GalleryPage() {
         <h2>Pashu Premi</h2>
 
         <div className="img-grid three">
-          <div><img src="/images/gallery/medical1.jpg" /></div>
-          <div><img src="/images/gallery/medical2.jpg" /></div>
-          <div><img src="/images/gallery/medical3.jpg" /></div>
+          <div><img src="/images/Pashu/img1.jpg" /></div>
+          <div><img src="/images/Pashu/img2.jpg" /></div>
+          <div><img src="/images/Pashu/img3.jpg" /></div>
         </div>
       </section>
 

@@ -76,8 +76,8 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
-        {/* <p>&copy; 2025 Plan International Canada Inc. Because I am a Girl, and Spread the Net names and associated logos are trademarks of Plan International Canada Inc.</p>
-        <p>CRA Charity Registration Number: 11892 8993 RR0001</p> */}
+        <p>Reg. No. E-37237, Mumbai, Maharashtra</p>
+        <p>&copy; 2022 Ashray for Life Foundation </p>
         <div className="footer-links">
           <Link to="#">Privacy Policy</Link>
           <Link to="#">Terms &amp; Conditions</Link>
