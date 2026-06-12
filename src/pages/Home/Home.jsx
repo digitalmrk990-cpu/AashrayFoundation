@@ -79,52 +79,60 @@ const testimonials = [
 const allProjects = [
   {
     id: 1,
-    title: "Project VIDHYALAY",
+    title: "Project Vidhyalay",
     desc: "Education initiatives for underprivileged children.",
     tag: "Education",
-    image: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&h=400&fit=crop",
+    image: "/images/education/Education1.jpg",
   },
   {
     id: 2,
     title: "Zero Hunger Drive",
     desc: "Eradicating hunger through food distribution and nutrition programs.",
     tag: "Food & Nutrition",
-    image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&h=400&fit=crop",
+    image: "/images/ZeroHunger/img1.jpg",
   },
   {
     id: 3,
     title: "Project JAL",
     desc: "Clean water access for rural communities through conservation and filtration.",
     tag: "Clean Water",
-    image: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=600&h=400&fit=crop",
+    image:  "/images/jal/img1.jpg",
   },
   {
     id: 4,
-    title: "Project NARI TARANG",
+    title: "Project Nari Tarang",
     desc: "Empowering women with education, skills, and self-reliance opportunities.",
     tag: "Women Empowerment",
-    image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&h=400&fit=crop",
+    image: "/images/NariTarang/img1.jpg",
   },
   {
     id: 5,
-    title: "Project ASHRA",
+    title: "Project Ashray ka Aashra",
     desc: "Ashray Ka Aashra - comprehensive care for orphaned children.",
     tag: "Orphan Care",
-    image: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=600&h=400&fit=crop",
+    image: "/images/Ashray/img1.jpg",
   },
   {
     id: 6,
-    title: "Project LIFE-LINE",
-    desc: "Life-saving medical care and critical surgery support for those in need.",
-    tag: "Medical",
-    image: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=600&h=400&fit=crop",
+    title: "Project Sahara",
+    desc: "Creating opportunities for self-reliance.",
+    tag: "Disability Support",
+    image: "/images/medical/img4.jpg",
   },
   {
     id: 7,
-    title: "Project SAHARA",
+    title: "Project Ashray ka Aashram",
     desc: "Dignified support and homes for the elderly.",
     tag: "Elderly Care",
-    image: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600&h=400&fit=crop",
+    image: "/images/oldage/img1.jpg",
+  },
+
+   {
+    id: 8,
+    title: "Project Pashu Premi",
+    desc: "Providing care, rescue, and protection for stray and vulnerable animals.",
+    tag: "Animal Welfare",
+    image: "/images/Pashu/img1.jpg",
   },
 ];
 
@@ -152,7 +160,7 @@ function Home() {
     <>
 
 
-<section class="bsct-home-hero-section">
+<section className="bsct-home-hero-section">
   <img src="/images/banner.jpg" 
     alt=""/>
 </section>
