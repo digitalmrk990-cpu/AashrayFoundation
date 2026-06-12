@@ -3,13 +3,14 @@ import { Link } from "react-router-dom";
 import "./Orphanage.css";
 
 const galleryImages = [
-  { id: 1, src: "https://images.unsplash.com/photo-1607457561901-e6ec3a6d16cf?w=600&h=400&fit=crop", alt: "Children studying" },
-  { id: 2, src: "https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=600&h=400&fit=crop", alt: "School supplies" },
-  { id: 3, src: "https://images.unsplash.com/photo-1588072432836-e10032774350?w=600&h=400&fit=crop", alt: "Happy children" },
-  { id: 4, src: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=400&fit=crop", alt: "Classroom learning" },
-  { id: 5, src: "https://images.unsplash.com/photo-1523050854058-8df90110c7f1?w=600&h=400&fit=crop", alt: "Students with books" },
-  { id: 6, src: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&h=400&fit=crop", alt: "Education for all" },
+  { id: 1, src: "/images/Ashray/img1.jpg", alt: "Ashray Project" },
+  { id: 2, src: "/images/Ashray/img2.jpg", alt: "Ashray Project" },
+  { id: 3, src: "/images/Ashray/img3.jpg", alt: "Ashray Project" },
+  { id: 4, src: "/images/Ashray/img4.jpg", alt: "Ashray Project" },
+  { id: 5, src: "/images/Ashray/img5.jpg", alt: "Ashray Project" },
+  { id: 6, src: "/images/Ashray/img6.jpg", alt: "Ashray Project" },
 ];
+
 
 const commitments = [
   {
@@ -49,7 +50,7 @@ export default function Orphanage() {
   }, []);
 
   return (
-    <div className="orphanage-page" style={{ '--hero-img': 'url(https://images.unsplash.com/photo-1607457561901-e6ec3a6d16cf?w=1200&h=600&fit=crop)' }}>
+    <div className="orphanage-page" style={{ '--hero-img': 'url("/images/Ashray/img1.jpg")' }}>
       {/* HERO */}
       <section className="detail-hero">
         <div className="detail-hero-shape detail-hero-shape--1" />
@@ -92,7 +93,7 @@ export default function Orphanage() {
             </div>
             <div className="detail-intro-image">
               <div className="detail-image-frame glass">
-                <img src="https://images.unsplash.com/photo-1607457561901-e6ec3a6d16cf?w=600&h=500&fit=crop" alt="Children at shelter" />
+                <img src="/images/Ashray/img1.jpg" alt="Children at shelter" />
               </div>
             </div>
           </div>

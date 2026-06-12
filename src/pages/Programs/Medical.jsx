@@ -72,23 +72,24 @@ export default function Medical() {
           <div className="detail-intro-grid">
             <div className="detail-intro-text">
               <span className="detail-section-tag">WELCOME TO</span>
-              <h2>Project Life-Line</h2>
-              <p>
-                At <strong>AFLF (Ashray for Life Foundation)</strong>, we firmly believe that
-                every heartbeat counts, especially when it belongs to a child or a person in
-                desperate need of life-saving surgery. <strong>Project Lifeline</strong> is our
-                unwavering commitment to providing a lifeline of hope to the poorest and most
-                vulnerable among us.
+              <h2>Project Sahara</h2>
+                <p>
+                At <strong>AFLF (Ashray For Life Foundation)</strong>, we believe that every
+                individual deserves the opportunity to live with dignity, independence, and
+                self-confidence. <strong>Project SAHARA</strong> is dedicated to empowering
+                disabled and specially-abled individuals by providing essential resources that
+                help them lead self-reliant and fulfilling lives.
               </p>
               <p>
-                We understand that for many little hearts, access to vital surgeries is a matter
-                of survival. Project Lifeline steps in as their lifeline, ensuring that no child
-                faces the threat of critical illness due to financial limitations.
+                Through this initiative, we provide livelihood and mobility support such as
+                sewing machines, flour mills, wheelchairs, and tricycles. These resources
+                enable beneficiaries to earn a sustainable income, improve their mobility, and
+                actively participate in society with greater confidence and independence.
               </p>
-              <p className="detail-quote">
-                "One surgery, one life saved — it's not just about surgeries; it's about giving
-                children the precious gift of life itself."
-              </p>
+             <p className="detail-quote">
+              "Empowering abilities, restoring dignity, and creating pathways to
+              independence for a brighter tomorrow."
+            </p>
             </div>
             <div className="detail-intro-image">
               <div className="detail-image-frame glass">
@@ -107,7 +108,7 @@ export default function Medical() {
         <div className="section-container">
           <h2>Our Mission</h2>
           <p className="detail-section-subtitle">
-            Through Project Lifeline, we are dedicated to saving lives and restoring hope
+             Enabling independence and dignity for disabled and specially-abled individuals.
           </p>
           <div className="detail-mission-grid">
             {missions.map((m, i) => (
@@ -126,17 +127,18 @@ export default function Medical() {
         <div className="section-container">
           <div className="detail-impact-content">
             <span className="detail-section-tag">OUR IMPACT</span>
-            <h2>Giving Families a Second Chance</h2>
-            <p>
-              Through Project Lifeline, we have witnessed the miracle of life restored. Children
-              who once faced critical health challenges now play, learn, and dream of a bright
-              future. Families who had lost hope now have their loved ones back.
-            </p>
-            <p>
-              Every surgery funded, every life saved, every family restored — these are the
-              milestones that drive us forward. Together, we are creating miracles, one surgery
-              at a time, and proving that collective compassion can achieve the extraordinary.
-            </p>
+            <h2>Transforming Lives Through Independence</h2>
+           <p>
+            Through Project SAHARA, disabled and specially-abled individuals have gained
+            greater mobility, confidence, and opportunities for self-reliance. Access to
+            livelihood resources has helped beneficiaries support themselves and their
+            families with dignity.
+          </p>
+           <p>
+            Every wheelchair delivered, every tricycle provided, and every livelihood tool
+            distributed represents a step toward empowerment. Together, we are building a
+            more inclusive society where abilities are strengthened and lives are transformed.
+          </p>
           </div>
         </div>
       </section>
@@ -146,19 +148,19 @@ export default function Medical() {
         <div className="detail-stats-grid">
           <div className="detail-stat glass">
             <span className="detail-stat-number">500+</span>
-            <span className="detail-stat-label">Lives Impacted</span>
+            <span className="detail-stat-label">Lives Empowered</span>
           </div>
           <div className="detail-stat glass">
             <span className="detail-stat-number">100+</span>
-            <span className="detail-stat-label">Surgeries Supported</span>
+            <span className="detail-stat-label">Mobility Aids Provided</span>
           </div>
           <div className="detail-stat glass">
             <span className="detail-stat-number">200+</span>
-            <span className="detail-stat-label">Families Helped</span>
+            <span className="detail-stat-label">Livelihood Tools Distributed</span>
           </div>
           <div className="detail-stat glass">
             <span className="detail-stat-number">24/7</span>
-            <span className="detail-stat-label">Emergency Care</span>
+            <span className="detail-stat-label">Families Supported</span>
           </div>
         </div>
       </section>
@@ -185,7 +187,7 @@ export default function Medical() {
       <section className="detail-cta">
         <div className="section-container">
           <h2>Support Our Mission</h2>
-          <p>Your support can help us save more lives and give families a second chance.</p>
+          <p>  Your support can help empower disabled and specially-abled individuals with mobility, livelihood opportunities, and a life of dignity..</p>
           <div className="detail-cta-btns">
             <Link to="/donate" className="btn-primary-glass">Donate Now</Link>
             <Link to="/volunteer" className="btn-secondary-glass">Become a Volunteer</Link>

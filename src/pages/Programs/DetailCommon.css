@@ -185,12 +185,11 @@
 }
 
 .detail-stats-grid {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 40px;
   max-width: 1000px;
   margin: 0 auto;
-  flex-wrap: wrap;
 }
 
 .detail-stat {

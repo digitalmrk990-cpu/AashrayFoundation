@@ -21,9 +21,11 @@ const navLinks = [
       { label: 'Zero Hunger Drive', path: '/programs/zero-hunger-drive' },
       { label: 'Project JAL', path: '/programs/jal-project' },
       { label: 'Ashray Ka Aashra', path: '/programs/orphanage' },
-      { label: 'Life-Line', path: '/programs/medical' },
-      { label: 'Sahara', path: '/programs/old-age-home' },
+      
+      { label: 'Sahara', path: '/programs/medical' },
+      { label: 'Ashray Ka Aashram', path: '/programs/old-age-home' },
       { label: 'Pashu Premi', path: '/programs/pashu-premi' },
+      
     ],
   },
   //  { label: 'Appeals', path: '/Appeals',

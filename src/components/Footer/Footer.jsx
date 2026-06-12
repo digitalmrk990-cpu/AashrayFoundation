@@ -3,46 +3,37 @@ import './Footer.css';
 
 const footerSections = [
   {
-    title: 'About us',
+    title: 'About Us',
     links: [
-      { label: 'Our mission', path: '/about' },
-      { label: 'Our people', path: '/about' },
-      { label: 'Our partnerships', path: '/about' },
-      { label: 'Financial accountability', path: '/about' },
+      { label: 'Management Team', path: '/about/management-team' },
+      { label: 'Legal Documents', path: '/about/legal-documents' },
+      { label: 'Gallery', path: '/gallery' },
     ],
   },
   {
-    title: 'Ways to Give',
+    title: 'Our Projects',
     links: [
+      { label: 'Vidhyalaya', path: '/programs/education' },
+      { label: 'Nari Tarang', path: '/programs/women-empowerment' },
+      { label: 'Zero Hunger Drive', path: '/programs/zero-hunger-drive' },
+      { label: 'Project JAL', path: '/programs/jal-project' },
+      { label: 'Ashray Ka Aashra', path: '/programs/orphanage' },
+      { label: 'Sahara', path: '/programs/medical' },
+      { label: 'Ashray Ka Aashram', path: '/programs/old-age-home' },
+      { label: 'Pashu Premi', path: '/programs/pashu-premi' },
+    ],
+  },
+  {
+    title: 'Get Involved',
+    links: [
+      { label: 'Volunteer', path: '/volunteer' },
       { label: 'Donate', path: '/donate' },
-      { label: 'Give a gift of hope', path: '/donate' },
-      { label: 'Emergency appeals', path: '/donate' },
-      { label: 'Legacy Gifts in Your Will', path: '/donate' },
     ],
   },
   {
-    title: 'Get involved',
+    title: 'Contact Us',
     links: [
-      { label: 'Youth Programs', path: '/volunteer' },
-      { label: 'Girls Belong Here', path: '/volunteer' },
-      { label: 'Corporate Partnerships', path: '/volunteer' },
-      { label: 'Fundraising', path: '/volunteer' },
-    ],
-  },
-  {
-    title: 'Sponsor a child',
-    links: [
-      { label: 'Find a child', path: '#' },
-      { label: 'Sponsorship FAQ', path: '#' },
-    ],
-  },
-  {
-    title: 'Get in touch',
-    links: [
-      { label: 'FAQs', path: '#' },
-      { label: 'Contact us', path: '/contact' },
-      { label: 'Live chat', path: '#' },
-      { label: 'Media & press releases', path: '#' },
+      { label: 'Get in Touch', path: '/ContactUs' },
     ],
   },
 ];
