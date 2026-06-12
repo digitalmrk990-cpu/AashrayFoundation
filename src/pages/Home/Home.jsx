@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import galleryData from "../../data/galleryData";
 import Partners from "../../components/Partners/Partners";
@@ -9,7 +9,7 @@ const stories = [
     id: 1,
     tag: "Impact Story",
     date: "Oct 12, 2024",
-    title: "How 'Ashray Ka Aashra' changed Meena's future forever",
+    title: "How Project ASHRA changed Meena's future forever",
     description:
       "After losing her parents, Meena found a home, an education, and a family within our foundation. Today, she is pursuing her dreams of becoming a nurse.",
     image:
@@ -56,47 +56,82 @@ const testimonials = [
     initials: "AP",
     color: "primary",
   },
+  {
+    id: 3,
+    quote:
+      "Volunteering with AFLF has been a life-changing experience. The team's dedication to holistic social service is inspiring, and every moment spent serving the community is deeply fulfilling.",
+    name: "Rohit Verma",
+    role: "Volunteer, Project VIDHYALAY",
+    initials: "RV",
+    color: "accent",
+  },
+  {
+    id: 4,
+    quote:
+      "I have seen firsthand how Project JAL has transformed our village. Clean water has given our children health and our women freedom. AFLF's transparency and commitment are unmatched.",
+    name: "Sunita Devi",
+    role: "Community Leader, Rajasthan",
+    initials: "SD",
+    color: "primary",
+  },
 ];
 
-const projects = [
+const allProjects = [
   {
     id: 1,
-    title: "Project JAL",
-    desc: "Clean water access for rural communities.",
-    tag: "Clean Water",
-    image: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=600&h=400&fit=crop",
+    title: "Project VIDHYALAY",
+    desc: "Education initiatives for underprivileged children.",
+    tag: "Education",
+    image: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&h=400&fit=crop",
   },
   {
     id: 2,
-    title: "Ashray Ka Aashra",
-    desc: "Comprehensive care for orphaned children.",
-    tag: "Orphan Care",
+    title: "Zero Hunger Drive",
+    desc: "Eradicating hunger through food distribution and nutrition programs.",
+    tag: "Food & Nutrition",
     image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&h=400&fit=crop",
   },
   {
     id: 3,
-    title: "Life-Line",
-    desc: "Emergency medical aid & healthcare support.",
-    tag: "Medical",
+    title: "Project JAL",
+    desc: "Clean water access for rural communities through conservation and filtration.",
+    tag: "Clean Water",
     image: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=600&h=400&fit=crop",
   },
   {
     id: 4,
-    title: "Sahara",
+    title: "Project NARI TARANG",
+    desc: "Empowering women with education, skills, and self-reliance opportunities.",
+    tag: "Women Empowerment",
+    image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&h=400&fit=crop",
+  },
+  {
+    id: 5,
+    title: "Project ASHRA",
+    desc: "Ashray Ka Aashra - comprehensive care for orphaned children.",
+    tag: "Orphan Care",
+    image: "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=600&h=400&fit=crop",
+  },
+  {
+    id: 6,
+    title: "Project LIFE-LINE",
+    desc: "Life-saving medical care and critical surgery support for those in need.",
+    tag: "Medical",
+    image: "https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=600&h=400&fit=crop",
+  },
+  {
+    id: 7,
+    title: "Project SAHARA",
     desc: "Dignified support and homes for the elderly.",
     tag: "Elderly Care",
     image: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600&h=400&fit=crop",
   },
-  {
-    id: 5,
-    title: "Pashupremi",
-    desc: "Rescue and welfare programs for animals.",
-    tag: "Animal Welfare",
-    image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&h=400&fit=crop",
-  },
 ];
 
 function Home() {
+  const [showAll, setShowAll] = useState(false);
+  const projects = showAll ? allProjects : allProjects.slice(0, 4);
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -128,7 +163,7 @@ function Home() {
         <div className="hero-shape hero-shape--2" />
         <div className="hero-container">
           <div className="hero-text-col">
-            <span className="hero-badge">Empowering Lives Since 2010</span>
+            <span className="hero-badge">Empowering Lives Since 2022</span>
             <h1 className="hero-title">
               Creating A Better <span className="hero-title-accent">Future Together</span>
             </h1>
@@ -162,9 +197,9 @@ function Home() {
         <div className="section-container">
           <div className="stats-grid">
             <div className="stats-text-col">
-              <h2 className="stats-title">Empowering the <br />Unreachable</h2>
+              <h2 className="stats-title">Who We <br />Are</h2>
               <p className="stats-desc">
-                Ashray for Life Foundation (AFLF) is more than an organization; it's a movement of compassion. We focus on systemic change by addressing core needs from healthcare to animal welfare.
+                Ashray for Life Foundation (AFLF), established in 2022 by Mr. Naresh Bhanushali in Vadodara, Gujarat, is a non-profit organization (NGO) dedicated to making a lasting impact on society. We focus on seven key sectors: Education, Zero Hunger Drive, Water Conservation, Women Empowerment, Orphanage, Medical Aid, and Old-Age Homes.
               </p>
               <div className="stats-numbers">
                 <div className="stat-card glass">
@@ -211,13 +246,13 @@ function Home() {
         <div className="section-container">
           <div className="projects-header">
             <div>
-              <h2 className="projects-title">Our Core Pillars</h2>
+              <h2 className="projects-title">Our Projects</h2>
               <p className="projects-subtitle">Focusing our efforts where they are needed the most.</p>
             </div>
-            <Link to="/programs" className="projects-view-btn glass">
-              View All Projects
-              <span className="material-symbol">arrow_forward</span>
-            </Link>
+            <button onClick={() => setShowAll(!showAll)} className="projects-view-btn glass">
+              {showAll ? "Show Less" : "View All Projects"}
+              <span className="material-symbol">{showAll ? "expand_less" : "arrow_forward"}</span>
+            </button>
           </div>
           <div className="projects-grid">
             {projects.map((project, i) => (
@@ -249,7 +284,7 @@ function Home() {
               </div>
               <h2 className="mv-card-title">Our Mission</h2>
               <p className="mv-card-desc">
-                To catalyze a sustainable social revolution by empowering the underprivileged through education, medical aid, and compassionate intervention, ensuring every life has the shelter (Ashray) it deserves.
+                To create a Just, Equitable and Humane Society through holistic and sustainable interventions in the seven key sectors of social development.
               </p>
             </div>
             <div className="mv-card-dark glass-dark mv-card-offset">
@@ -258,7 +293,7 @@ function Home() {
               </div>
               <h2 className="mv-card-title">Our Vision</h2>
               <p className="mv-card-desc">
-                To envision a world where socio-economic barriers are dismantled, where every being—human or animal—thrives in a safe environment filled with dignity, opportunity, and communal support.
+                To build a self-reliant society where every individual, regardless of their socio-economic status, has access to basic necessities and opportunities for a dignified life.
               </p>
             </div>
           </div>
@@ -276,22 +311,22 @@ function Home() {
                 className="involved-img-back"
               />
               <div className="involved-card glass">
-                <h3>Support Our Mission</h3>
-                <p>Your corporate partnership or individual donation drives our largest projects. Be the anchor that supports our future initiatives.</p>
-                <Link to="/donate" className="btn-primary-glass">
-                  Partner With Us
-                  <span className="material-symbol">handshake</span>
+                <h3>Get Involved</h3>
+                <p>Lend your skills and time to make a tangible difference in the lives of many. We have opportunities in field work, administration, and digital support.</p>
+                <Link to="/volunteer" className="btn-primary-glass">
+                  Become a Volunteer
+                  <span className="material-symbol">person_add</span>
                 </Link>
               </div>
             </div>
             <div className="involved-form-col">
               <div className="involved-form-card glass">
                 <div className="involved-form-glow" />
-                <h3>Become a Volunteer</h3>
-                <p>Lend your skills and time to make a tangible difference in the lives of many. We have opportunities in field work, administration, and digital support.</p>
+                <h3>Support Our Mission</h3>
+                <p>Your support helps us drive our largest projects and create lasting change in communities. Join us in making a difference.</p>
                 <Link to="/volunteer" className="btn-primary-glass">
-                  Apply Now
-                  <span className="material-symbol">person_add</span>
+                  Join Us Today
+                  <span className="material-symbol">handshake</span>
                 </Link>
               </div>
             </div>
