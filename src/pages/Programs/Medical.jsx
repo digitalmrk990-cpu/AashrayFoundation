@@ -13,16 +13,16 @@ const galleryImages = [
 
 const missions = [
   {
-    title: "Saving Children's Lives",
-    desc: "Access to vital surgeries is a matter of survival. Project Lifeline steps in as their lifeline, ensuring no child faces critical illness due to financial limitations.",
+    title: "Promoting Independence",
+    desc: "We empower disabled and specially-abled individuals by providing resources that help them live independently and with dignity.",
   },
   {
-    title: "Critical Surgery Support",
-    desc: "We take on cases of individuals, especially children, who require complex and costly surgeries but lack the means to pay for them.",
+    title: "Mobility & Accessibility Support",
+    desc: "Through wheelchairs and tricycles, we enhance mobility, enabling beneficiaries to participate actively in daily life and society.",
   },
   {
-    title: "Compassionate Care",
-    desc: "Project Lifeline embodies the spirit of compassion and unwavering solidarity. Communities come together to create miracles, one surgery at a time.",
+    title: "Sustainable Livelihood Opportunities",
+    desc: "By providing sewing machines, flour mills, and skill support, we help individuals generate income and build a self-reliant future.",
   },
 ];
 
@@ -82,7 +82,7 @@ export default function Medical() {
               </p>
               <p>
                 Through this initiative, we provide livelihood and mobility support such as
-                sewing machines, flour mills, wheelchairs, and tricycles. These resources
+                sewing machines, flour mills, and wheelchairs. These resources
                 enable beneficiaries to earn a sustainable income, improve their mobility, and
                 actively participate in society with greater confidence and independence.
               </p>
