@@ -333,6 +333,27 @@ const stories = [
   },
 ];
 
+const blogPosts = [
+  {
+    image: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=600&h=400&fit=crop",
+    title: "Money Donation: A Complete Guide to Giving",
+    date: "06 Jun 2026",
+    link: "/blog/money-donation-a-complete-guide-to-giving/",
+  },
+  {
+    image: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&h=400&fit=crop",
+    title: "Names of Charities in India | Riddhi Siddhi Charitable Trust",
+    date: "14 May 2026",
+    link: "/blog/names-of-charities-in-india-riddhi-siddhi-charitable-trust/",
+  },
+  {
+    image: "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600&h=400&fit=crop",
+    title: "Cow Shelter in Mumbai for Animal Welfare Support",
+    date: "14 May 2026",
+    link: "/blog/cow-shelter-in-mumbai-for-animal-welfare-support/",
+  },
+];
+
 export default function PlanCanadaSection() {
   const [hovered, setHovered] = useState(null);
 
@@ -442,44 +463,45 @@ export default function PlanCanadaSection() {
         </div>  
         </section>
 
-        {/* STORIES */}
-        <section style={{ background: "#c6dbef", borderRadius:"60px 0px 60px 0px", padding: 40 }}>
-          <h2 style={{ fontSize: 30, fontWeight: 800, marginBottom: 30 }}>
-            Our Stories
-          </h2>
+        {/* BLOG CARDS */}
+        <section className="blog-section">
+          <div className="blog-section__header">
+            <h2 className="blog-section__title">
+              Our Latest Articles
+            </h2>
+            <p className="blog-section__subtitle">
+              News &amp; Blog
+            </p>
+          </div>
 
-          {stories.filter(s => s.big).map((story, i) => (
-            <div
-              key={i}
-              style={{
-                display: "flex",
-                borderRadius: "60px 0px 60px 0px",
-                overflow: "hidden",
-                marginBottom: 20,
-              }}
-            >
-              <img src={story.img} style={{width: "40%",borderRadius: "60px 0px 60px 0px", objectFit: "cover"}}
-/>
-              <div style={{ padding: 20 }}>
-                <h3 style={{ fontSize: 20 }}>{story.title}</h3>
-                <p style={{ fontSize: 14, color: "#555" }}>{story.desc}</p>
-                <Link to="/donate" style={{ textDecoration: "none" }}>
-                  <button style={{ background: "#2e2c8a", color: "#fff", padding: "10px 18px", borderRadius: 20 }}>
-                    Donate Now
-                  </button>
-                </Link>
-              </div>
-            </div>
-          ))}
-
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 16 }}>
-            {stories.filter(s => !s.big).map((story, i) => (
-              <div key={i} style={{ background: "#f9f9f9", borderRadius: "60px 0px 60px 0px" }}>
-                <img src={story.img}style={{width: "100%",borderRadius: "60px 0px 60px 0px",objectFit: "cover"  }}
-/>
-                <div style={{ padding: 12 }}>
-                  <h4>{story.title}</h4>
-                  <p style={{ fontSize: 12, color: "#777" }}>{story.category}</p>
+          <div className="blog-track">
+            {blogPosts.map((post, i) => (
+              <div key={i} className="blog-card">
+                <div className="blog-card__inner">
+                  <div className="blog-card__image">
+                    <img src={post.image} alt={post.title} />
+                    <img src={post.image} alt={post.title} />
+                    <a href={post.link} className="blog-card__image__link">
+                      <span className="sr-only">{post.title}</span>
+                    </a>
+                    <div className="blog-card__date">
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                      {post.date}
+                    </div>
+                  </div>
+                  <div className="blog-card__body">
+                    <h3 className="blog-card__title">
+                      <a href={post.link}>{post.title}</a>
+                    </h3>
+                    <div className="blog-card__link">
+                      <a href={post.link}>
+                        <span className="blog-card__link-icon">
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#4a6fa5" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </span>
+                        Read More
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             ))}
