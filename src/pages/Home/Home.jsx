@@ -115,6 +115,13 @@ function Home() {
 
   return (
     <>
+
+
+<section class="bsct-home-hero-section">
+  <img src="/images/banner.jpg" 
+    alt=""/>
+</section>
+
       {/* ===== HERO ===== */}
       <section className="home-hero">
         <div className="hero-shape hero-shape--1" />
