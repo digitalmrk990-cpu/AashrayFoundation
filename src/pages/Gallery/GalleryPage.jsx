@@ -7,14 +7,14 @@ function GalleryPage() {
 
   
     <main className="gallery-page">
-
+{/* 
       HERO IMAGE
       <section className="gallery-new">
         <img
           src=""
           alt="Gallery-new"
         />
-      </section>
+      </section> */}
 
       {/* PROJECT 1 */}
       <section className="gallery-content">

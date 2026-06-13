@@ -93,7 +93,7 @@ function LegalDocuments() {
   return (
     <main className="legal-page">
       {/* HERO */}
-      <section className="legal-hero">
+      {/* <section className="legal-hero">
         <div className="legal-hero-shape legal-hero-shape--1" />
         <div className="legal-hero-shape legal-hero-shape--2" />
         <div className="section-container">
@@ -103,7 +103,7 @@ function LegalDocuments() {
             <p>Official registrations, tax exemptions, and government accreditations of Ashray for Life Foundation.</p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* DOCUMENTS */}
       <section className="legal-docs">

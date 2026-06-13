@@ -26,7 +26,7 @@ function ManagementTeam() {
   return (
     <main className="management-page">
       {/* HERO */}
-      <section className="management-hero">
+      {/* <section className="management-hero">
         <div className="management-hero-shape management-hero-shape--1" />
         <div className="management-hero-shape management-hero-shape--2" />
         <div className="section-container">
@@ -36,7 +36,7 @@ function ManagementTeam() {
             <p>Meet the dedicated individuals steering Ashray for Life Foundation toward a brighter future.</p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* TEAM */}
       <section className="management-team">

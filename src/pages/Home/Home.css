@@ -430,17 +430,17 @@
 
 /* ===== PROJECTS ===== */
 .projects-section {
-  padding: 80px 24px;
+  padding: 20px 24px;
   background: rgba(198, 219, 239, 0.2);
   position: relative;
 }
 
 .projects-header {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin-bottom: 80px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 0px;
   gap: 32px;
 }
 
@@ -448,7 +448,7 @@
   font-family: "Plus Jakarta Sans", "Segoe UI", sans-serif;
   font-size: 48px;
   color: #2e2c8a;
-  margin-bottom: 24px;
+  margin-bottom: 5px;
 }
 
 .projects-subtitle {
@@ -492,43 +492,56 @@
 }
 
 .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 32px;
+  display: flex;
+  gap: 24px;
+  overflow: hidden;
+  padding: 16px 0;
+}
+
+.projects-track {
+  display: flex;
+  gap: 24px;
+  animation: causesScroll 30s linear infinite;
+}
+
+.projects-track:hover {
+  animation-play-state: paused;
 }
 
 .project-card-wrapper {
   position: relative;
+  flex: 0 0 320px;
 }
 
 .project-card-wrapper.offset-top {
   padding-top: 48px;
 }
 
-.project-card-glow {
-  position: absolute;
-  top: 0;
-  right: 16px;
-  width: 96px;
-  height: 96px;
-  background: rgba(74, 111, 165, 0.2);
-  border-radius: 50%;
-  filter: blur(24px);
-  z-index: 0;
-  pointer-events: none;
+@keyframes causesScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
+
+
 
 .project-card {
   padding: 16px;
   border-radius: 32px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
   position: relative;
   z-index: 1;
+  transform-style: preserve-3d;
+  perspective: 1000px;
 }
 
 .project-card:hover {
-  transform: translateY(-16px);
+  transform: perspective(1000px) rotateY(-4deg) rotateX(4deg) translateY(-12px);
+  box-shadow: -10px 15px 40px rgba(46, 44, 138, 0.25);
 }
 
 .project-card-image {
@@ -536,6 +549,9 @@
   overflow: hidden;
   border-radius: 24px;
   margin-bottom: 24px;
+  border: 1px solid #2e2c8a;
+  box-shadow: 0 4px 20px rgba(46, 44, 138, 0.15);
+  transition: box-shadow 0.4s ease, border-color 0.4s ease;
 }
 
 .project-card-image img {
@@ -544,6 +560,11 @@
   object-fit: cover;
   transition: transform 0.7s ease;
   display: block;
+}
+
+.project-card:hover .project-card-image {
+  box-shadow: 0 8px 40px rgba(46, 44, 138, 0.35);
+  border-color: #1a1a6e;
 }
 
 .project-card:hover .project-card-image img {
@@ -579,7 +600,7 @@
 
 /* ===== MISSION & VISION ===== */
 .mv-section {
-  padding: 100px 24px;
+  padding: 50px 24px;
   overflow: hidden;
   position: relative;
   background: #eff3ff;
@@ -602,18 +623,24 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 48px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .mv-card-dark {
-  padding: 64px;
-  border-radius: 60px;
+  padding: 40px;
+  border-radius: 40px;
   position: relative;
   overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-.mv-card-offset {
-  transform: translateY(96px);
+.mv-card-dark:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 60px rgba(46, 44, 138, 0.2);
 }
+
+
 
 .mv-card-glow {
   position: absolute;
@@ -628,15 +655,15 @@
 }
 
 .mv-icon-wrap {
-  width: 80px;
-  height: 80px;
+  width: 56px;
+  height: 56px;
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(8px);
-  border-radius: 24px;
+  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 24px;
   transition: transform 0.3s;
 }
 
@@ -645,19 +672,19 @@
 }
 
 .mv-icon-wrap .material-symbol {
-  font-size: 36px;
+  font-size: 28px;
   color: #fff;
 }
 
 .mv-card-title {
   font-family: "Plus Jakarta Sans", "Segoe UI", sans-serif;
-  font-size: 36px;
-  margin-bottom: 32px;
+  font-size: 28px;
+  margin-bottom: 16px;
 }
 
 .mv-card-desc {
-  font-size: 18px;
-  line-height: 1.7;
+  font-size: 15px;
+  line-height: 1.6;
   opacity: 0.8;
 }
 
@@ -1090,9 +1117,7 @@
     gap: 32px;
   }
 
-  .mv-card-offset {
-    transform: translateY(48px);
-  }
+
 }
 
 @media (max-width: 768px) {
@@ -1152,12 +1177,19 @@
   }
 
   .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    gap: 16px;
+  }
+
+  .projects-track {
+    gap: 16px;
+  }
+
+  .project-card-wrapper {
+    flex: 0 0 260px;
   }
 
   .project-card-wrapper.offset-top {
-    padding-top: 0;
+    padding-top: 24px;
   }
 
   .project-card-image {
@@ -1176,15 +1208,12 @@
   }
 
   .mv-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
   }
 
   .mv-card-dark {
-    padding: 40px;
-  }
-
-  .mv-card-offset {
-    transform: translateY(0);
+    padding: 32px;
   }
 
   .involved-grid {
@@ -1233,8 +1262,15 @@
 
 @media (max-width: 480px) {
   .projects-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 12px;
+  }
+
+  .projects-track {
+    gap: 12px;
+  }
+
+  .project-card-wrapper {
+    flex: 0 0 200px;
   }
 
   .stats-numbers {

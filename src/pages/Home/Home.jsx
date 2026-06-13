@@ -9,11 +9,11 @@ const stories = [
     id: 1,
     tag: "Impact Story",
     date: "Oct 12, 2024",
-    title: "How Project ASHRA changed Meena's future forever",
+    title: "From Support to Self-Reliance",
     description:
-      "After losing her parents, Meena found a home, an education, and a family within our foundation. Today, she is pursuing her dreams of becoming a nurse.",
+      "Through our community initiatives, individuals facing difficult circumstances received the resources, guidance, and opportunities needed to rebuild their lives and move towards a brighter future.",
     image:
-      "https://images.unsplash.com/photo-1551698618-1dfe5d97d256?w=600&h=400&fit=crop",
+      "/images/Volunteers1.jpg",
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ const stories = [
     description:
       "Project JAL has successfully implemented solar-powered filtration plants in the drought-hit regions of Rajasthan, serving over 2000 families.",
     image:
-      "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&h=400&fit=crop",
+      "/images/Volunteers2.jpg",
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ const stories = [
     description:
       "Meet our longest-serving volunteer, Arun, who has dedicated his weekends for 5 years to ensuring the residents of Sahara never feel alone.",
     image:
-      "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600&h=400&fit=crop",
+      "/images/Volunteers.jpg",
   },
 ];
 
@@ -89,14 +89,14 @@ const allProjects = [
     title: "Zero Hunger Drive",
     desc: "Eradicating hunger through food distribution and nutrition programs.",
     tag: "Food & Nutrition",
-    image: "/images/ZeroHunger/img1.JPG",
+    image: "/images/ZeroHunger/img1.jpg",
   },
   {
     id: 3,
     title: "Project JAL",
     desc: "Clean water access for rural communities through conservation and filtration.",
     tag: "Clean Water",
-    image: "/images/jal/img1.JPG",
+    image: "/images/jal/img1.jpg",
   },
   {
     id: 4,
@@ -191,7 +191,7 @@ function Home() {
           <div className="hero-image-col">
             <div className="hero-image-frame">
               <img
-                src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=800&h=600&fit=crop"
+                src="/images/banner1.jpg"
                 alt="Children smiling"
               />
             </div>
@@ -205,7 +205,7 @@ function Home() {
         <div className="section-container">
           <div className="stats-grid">
             <div className="stats-text-col">
-              <h2 className="stats-title">Who We <br />Are</h2>
+              <h2 className="stats-title">Who We Are<br /></h2>
               <p className="stats-desc">
                 Ashray for Life Foundation (AFLF), established in 2022 by Mr. Naresh Bhanushali in Vadodara, Gujarat, is a non-profit organization (NGO) dedicated to making a lasting impact on society. We focus on seven key sectors: Education, Zero Hunger Drive, Water Conservation, Women Empowerment, Orphanage, Medical Aid, and Old-Age Homes.
               </p>
@@ -264,25 +264,26 @@ function Home() {
               <h2 className="projects-title">Our Projects</h2>
               <p className="projects-subtitle">Focusing our efforts where they are needed the most.</p>
             </div>
-            <button onClick={() => setShowAll(!showAll)} className="projects-view-btn glass">
+            {/* <button onClick={() => setShowAll(!showAll)} className="projects-view-btn glass">
               {showAll ? "Show Less" : "View All Projects"}
               <span className="material-symbol">{showAll ? "expand_less" : "arrow_forward"}</span>
-            </button>
+            </button> */}
           </div>
           <div className="projects-grid">
-            {projects.map((project, i) => (
-              <div key={project.id} className={`project-card-wrapper ${i % 2 === 0 ? "offset-top" : ""}`}>
-                <div className="project-card-glow" />
-                <div className="project-card glass">
-                  <div className="project-card-image">
-                    <img src={project.image} alt={project.title} />
+            <div className="projects-track">
+              {[...projects, ...projects].map((project, i) => (
+                <div key={`${project.id}-${i}`} className={`project-card-wrapper ${i % 2 === 0 ? "offset-top" : ""}`}>
+                  <div className="project-card glass">
+                    <div className="project-card-image">
+                      <img src={project.image} alt={project.title} />
+                    </div>
+                    <h3 className="project-card-title">{project.title}</h3>
+                    <p className="project-card-desc">{project.desc}</p>
+                    <span className="project-card-tag">{project.tag}</span>
                   </div>
-                  <h3 className="project-card-title">{project.title}</h3>
-                  <p className="project-card-desc">{project.desc}</p>
-                  <span className="project-card-tag">{project.tag}</span>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -302,7 +303,7 @@ function Home() {
                 To create a Just, Equitable and Humane Society through holistic and sustainable interventions in the seven key sectors of social development.
               </p>
             </div>
-            <div className="mv-card-dark glass-dark mv-card-offset">
+            <div className="mv-card-dark glass-dark">
               <div className="mv-icon-wrap">
                 <span className="material-symbol fill">visibility</span>
               </div>
@@ -321,7 +322,7 @@ function Home() {
           <div className="involved-grid">
             <div className="involved-image-col">
               <img
-                src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=600&h=500&fit=crop"
+                src="/images/Volunteers.jpg"
                 alt="Volunteers"
                 className="involved-img-back"
               />

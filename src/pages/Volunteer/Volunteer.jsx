@@ -80,7 +80,7 @@ export default function Volunteer() {
 
   return (
     <main className="volunteer-page">
-      {/* HERO */}
+      {/* HERO
       <section className="detail-hero volunteer-hero">
         <div className="detail-hero-shape detail-hero-shape--1" />
         <div className="detail-hero-shape detail-hero-shape--2" />
@@ -93,7 +93,7 @@ export default function Volunteer() {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* WHY VOLUNTEER */}
       <section className="detail-intro" ref={(el) => (sectionRefs.current[3] = el)}>
