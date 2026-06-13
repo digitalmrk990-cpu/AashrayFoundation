@@ -116,7 +116,7 @@ export default function Volunteer() {
             <div className="detail-intro-image">
               <div className="detail-image-frame glass">
                 <img
-                  src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=600&h=500&fit=crop"
+                  src="images/BUTTER.jpg"
                   alt="Volunteers working together"
                 />
               </div>
