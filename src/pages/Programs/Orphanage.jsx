@@ -50,7 +50,7 @@ export default function Orphanage() {
   }, []);
 
   return (
-    <div className="orphanage-page" style={{ '--hero-img': 'url("/images/Ashray/img1.jpg")' }}>
+    <div className="orphanage-page" style={{ '--hero-img': 'url("/images/AKA.jpg")' }}>
       {/* HERO */}
       <section className="detail-hero">
         <div className="detail-hero-shape detail-hero-shape--1" />

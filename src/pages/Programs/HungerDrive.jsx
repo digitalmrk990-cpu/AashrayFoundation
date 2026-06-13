@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 import "./HungerDrive.css";
 
 const galleryImages = [
-  { id: 1, src: "/images/ZeroHunger/img2.jpg", alt: "Food Distribution" },
-  { id: 2, src: "/images/ZeroHunger/img3.jpg", alt: "Meal Preparation" },
-  { id: 3, src: "/images/ZeroHunger/img4.jpg", alt: "Community Kitchen" },
-  { id: 4, src: "/images/ZeroHunger/img5.jpg", alt: "Food Packets" },
-  { id: 5, src: "/images/ZeroHunger/img6.jpg", alt: "Volunteers Serving" },
-  { id: 6, src: "/images/ZeroHunger/img1.jpg", alt: "Happy Children Eating" },
+  { id: 1, src: "/images/ZeroHunger/img2.JPG", alt: "Food Distribution" },
+  { id: 2, src: "/images/ZeroHunger/img3.JPG", alt: "Meal Preparation" },
+  { id: 3, src: "/images/ZeroHunger/img4.JPG", alt: "Community Kitchen" },
+  { id: 4, src: "/images/ZeroHunger/img5.JPG", alt: "Food Packets" },
+  { id: 5, src: "/images/ZeroHunger/img6.JPG", alt: "Volunteers Serving" },
+  { id: 6, src: "/images/ZeroHunger/img1.JPG", alt: "Happy Children Eating" },
 ];
 
 const missions = [
@@ -90,7 +90,7 @@ export default function HungerDrive() {
             </div>
             <div className="detail-intro-image">
               <div className="detail-image-frame glass">
-                <img src="/images/ZeroHunger/img1.jpg" alt="Food distribution" />
+                <img src="/images/ZeroHunger/img1.JPG" alt="Food distribution" />
               </div>
             </div>
           </div>

@@ -8,7 +8,7 @@ const galleryImages = [
   { id: 3, src: "/images/education/Education4.jpg", alt: "School Activities" },
   { id: 4, src: "/images/education/Education5.jpg", alt: "Educational Materials" },
   { id: 5, src: "/images/education/Education6.jpg", alt: "Classroom Support" },
-  { id: 6, src: "/images/education/Education1.jpg", alt: "Students Learning" },
+  { id: 6, src: "/images/education/Education7.JPG", alt: "Students Learning" },
 ];
 
 const missions = [

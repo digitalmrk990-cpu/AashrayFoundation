@@ -103,7 +103,7 @@ export default function WomenEmpowerment() {
             </div>
             <div className="detail-intro-image">
               <div className="detail-image-frame glass">
-                <img src="/images/NariTarang/img1.jpg" alt="Women Empowerment" />
+                <img src="/images/NariTarang/Q9.jpg" alt="Women Empowerment" />
               </div>
             </div>
           </div>

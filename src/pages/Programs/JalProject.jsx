@@ -8,7 +8,9 @@ const galleryImages = [
   { id: 3, src: "/images/jal/img3.jpg", alt: "Community Water Access" },
   { id: 4, src: "/images/jal/img4.jpg", alt: "Water Facility Installation" },
   { id: 5, src: "/images/jal/img5.jpg", alt: "Clean Water Distribution" },
-  { id: 6, src: "/images/jal/img6.jpg", alt: "Children Drinking Clean Water" },
+  { id: 6, src:
+    
+    "/images/jal/img6.jpg", alt: "Children Drinking Clean Water" },
 ];
 
 const missions = [
