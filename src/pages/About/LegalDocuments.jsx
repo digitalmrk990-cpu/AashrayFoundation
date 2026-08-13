@@ -37,6 +37,13 @@ const documents = [
     type: "Tax Exemption",
     desc: "Exempts trust income from taxation under Section 12A.",
   },
+  {
+    id: 6,
+    title: "AFLF CSR Certificate",
+    file: "/documents/AFLF-CSR-Certificate.pdf",
+    type: "Certificate",
+    desc: "CSR certification awarded by Akshaya Patra Foundation Ltd. (AFLF) in recognition of Ashray for Life Foundation's contributions.",
+  },
 ];
 
 const iconMap = {
