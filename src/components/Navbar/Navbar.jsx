@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import Button from '../Common/Button';
 import './Navbar.css';
 
@@ -47,6 +47,11 @@ function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
+  const location = useLocation();
+
+  useEffect(() => {
+    setOpenDropdown(null);
+  }, [location.pathname]);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10);
@@ -81,18 +86,38 @@ function Navbar() {
 
           <nav className="nav">
             {navLinks.map((link) => (
-              <div className="nav-item" key={link.path}>
+              <div
+                className={`nav-item${openDropdown === link.path ? ' nav-item--open' : ''}`}
+                key={link.path}
+                onMouseEnter={() => setOpenDropdown(link.path)}
+                onMouseLeave={() => setOpenDropdown(null)}
+              >
                 {link.dropdown ? (
                   <>
-                    <span className="nav-link nav-link--dropdown">
+                    <Link
+                      to={link.path}
+                      className="nav-link nav-link--dropdown"
+                      onClick={(e) => {
+                        e.currentTarget.blur();
+                        setOpenDropdown(null);
+                      }}
+                    >
                       {link.label}
                       <svg className="dropdown-arrow" width="10" height="6" viewBox="0 0 10 6" fill="currentColor">
                         <path d="M0 0l5 6 5-6z"/>
                       </svg>
-                    </span>
+                    </Link>
                     <div className="dropdown-menu">
                       {link.dropdown.map((item) => (
-                        <Link key={item.path} to={item.path} className="dropdown-link">
+                        <Link
+                          key={item.path}
+                          to={item.path}
+                          className="dropdown-link"
+                          onClick={(e) => {
+                            e.currentTarget.blur();
+                            setOpenDropdown(null);
+                          }}
+                        >
                           {item.label}
                         </Link>
                       ))}
@@ -147,11 +172,14 @@ function Navbar() {
         </div>
 
         {navLinks.map((link) => (
-          <div className="mobile-nav-item" key={link.path}>
+          <div
+            className={`mobile-nav-item${openDropdown === link.path ? ' mobile-nav-item--open' : ''}`}
+            key={link.path}
+          >
             {link.dropdown ? (
               <>
                 <span
-                  className="mobile-nav-link mobile-nav-link--dropdown"
+                  className={`mobile-nav-link mobile-nav-link--dropdown${openDropdown === link.path ? ' mobile-nav-link--open' : ''}`}
                   onClick={() => toggleDropdown(link.path)}
                 >
                   {link.label}

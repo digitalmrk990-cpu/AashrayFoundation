@@ -346,32 +346,40 @@ function Home() {
       {/* =====  GET INVOLVED ===== */}
       <section className="involved-section">
         <div className="section-container">
+          <h2 className="involved-title">Get Involved</h2>
           <div className="involved-grid">
-            <div className="involved-image-col">
-              <div className="involved-card glass">
-                <h3>Get Involved</h3>
-                <p>Lend your skills and time to make a tangible difference in the lives of many. We have opportunities in field work, administration, and digital support.</p>
-                <Link to="/volunteer" className="btn-primary-glass">
-                  Become a Volunteer
-                  <span className="material-symbol">person_add</span>
-                </Link>
+            <div className="involved-card glass">
+              <div className="feature-icon">
+                <span className="material-symbol">volunteer_activism</span>
               </div>
-              <img
-                src="/images/Volunteers.jpg"
-                alt="Volunteers"
-                className="involved-img-back"
-              />
+              <h3>Become a Volunteer</h3>
+              <p>Lend your skills and time to make a tangible difference in the lives of many. We have opportunities in field work, administration, and digital support.</p>
+              <Link to="/volunteer" className="btn-primary-glass">
+                Become a Volunteer
+                <span className="material-symbol">person_add</span>
+              </Link>
             </div>
-            <div className="involved-form-col">
-              <div className="involved-form-card glass">
-                <div className="involved-form-glow" />
-                <h3>Support Our Mission</h3>
-                <p>Your support helps us drive our largest projects and create lasting change in communities. Join us in making a difference.</p>
-                <Link to="/volunteer" className="btn-primary-glass">
-                  Join Us Today
-                  <span className="material-symbol">handshake</span>
-                </Link>
+            <div className="involved-card glass">
+              <div className="feature-icon">
+                <span className="material-symbol">handshake</span>
               </div>
+              <h3>Support Our Mission</h3>
+              <p>Your support helps us drive our largest projects and create lasting change in communities. Join us in making a difference.</p>
+              <Link to="/donate" className="btn-primary-glass">
+                Donate Now
+                <span className="material-symbol">favorite</span>
+              </Link>
+            </div>
+            <div className="involved-card glass">
+              <div className="feature-icon">
+                <span className="material-symbol">diversity_3</span>
+              </div>
+              <h3>Partner With Us</h3>
+              <p>Collaborate with us as a corporate partner, NGO, or institution to expand our reach and create a deeper, lasting social impact together.</p>
+              <Link to="/contact" className="btn-primary-glass">
+                Contact Us
+                <span className="material-symbol">mail</span>
+              </Link>
             </div>
           </div>
         </div>

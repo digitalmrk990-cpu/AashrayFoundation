@@ -3,7 +3,7 @@ import "./ManagementTeam.css";
 
 const teamMembers = [
   { id: 1, name: "Mr. Naresh Bhanushali", role: "President", photo: "/images/team/naresh-bhanushali.jpg" },
-  { id: 2, name: "Mr. Mihir Shah", role: "Secretary", photo: "/images/team/mihir-shah.jpg" },
+  { id: 2, name: "Mr. Mihir Shah", role: "Secretary", photo: "/images/team/a2.jpeg" },
   { id: 4, name: "Mrs. Prachi Dhanawade", role: "Accounts Executive", photo: "/images/team/prachi-dhanawade.jpg" },
   { id: 5, name: "Mr. Deepak Karkera", role: "Team Member", photo: "/images/team/deepak-karkera.jpg" },
   { id: 6, name: "Ms. Deepa Gupta", role: "Team Member", photo: "/images/team/deepa-gupta.jpg" },

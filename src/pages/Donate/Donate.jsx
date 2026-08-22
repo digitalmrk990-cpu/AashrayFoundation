@@ -318,6 +318,31 @@ export default function Donate() {
                 </ul>
               </div>
 
+              <div className="donate-trust">
+                <h4>Donate with confidence:</h4>
+                <div className="donate-trust-item">
+                  <span className="material-symbol">verified</span>
+                  <div className="donate-trust-text">
+                    <strong>100% Transparent Funds</strong>
+                    <small>Every rupee is audited and reported to donors.</small>
+                  </div>
+                </div>
+                <div className="donate-trust-item">
+                  <span className="material-symbol">receipt_long</span>
+                  <div className="donate-trust-text">
+                    <strong>80G Tax Exemption</strong>
+                    <small>Get tax benefits on your donation.</small>
+                  </div>
+                </div>
+                <div className="donate-trust-item">
+                  <span className="material-symbol">lock</span>
+                  <div className="donate-trust-text">
+                    <strong>Safe & Secure Payment</strong>
+                    <small>Encrypted transactions powered by Razorpay.</small>
+                  </div>
+                </div>
+              </div>
+
               <div className="donate-stats-card">
                 <span className="donate-stats-value">{cause.stats.value}</span>
                 <span className="donate-stats-label">{cause.stats.label}</span>
@@ -384,6 +409,40 @@ export default function Donate() {
                 Secure payment via Razorpay
               </p>
             </form>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== BANK DETAILS ===== */}
+      <section className="donate-bank">
+        <div className="container">
+          <div className="bank-card">
+            <div className="bank-details">
+              <h2>Bank Details</h2>
+              <p className="bank-subtitle">You can donate directly via bank transfer using the details below.</p>
+              <ul className="bank-list">
+                <li>
+                  <span className="bank-label">Account Name</span>
+                  <strong className="bank-value">Ashray For Life Foundation</strong>
+                </li>
+                <li>
+                  <span className="bank-label">Bank</span>
+                  <strong className="bank-value">Axis Bank (Malad-West)</strong>
+                </li>
+                <li>
+                  <span className="bank-label">Account No</span>
+                  <strong className="bank-value">923010009459428</strong>
+                </li>
+                <li>
+                  <span className="bank-label">IFSC Code</span>
+                  <strong className="bank-value">UTIB0004707</strong>
+                </li>
+              </ul>
+            </div>
+            <div className="bank-qr">
+              <img src="/images/qr-code.jpeg" alt="Donation QR Code" />
+              <p>Scan to donate via UPI</p>
+            </div>
           </div>
         </div>
       </section>
