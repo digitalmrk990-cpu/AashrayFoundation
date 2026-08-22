@@ -256,3 +256,8 @@
     padding: 24px 16px 60px;
   }
 }
+
+/* ===== JUSTIFIED BODY TEXT (paragraphs only — headlines unchanged) ===== */
+.programs-page p {
+  text-align: justify;
+}

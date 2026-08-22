@@ -52,6 +52,8 @@ const benefits = [
 
 export default function Volunteer() {
   const sectionRefs = useRef([]);
+  const emptyForm = { name: "", email: "", phone: "", city: "", interest: "", availability: "", message: "" };
+  const [form, setForm] = useState(emptyForm);
   const [submitted, setSubmitted] = useState(false);
 
   useEffect(() => {
@@ -73,9 +75,18 @@ export default function Volunteer() {
     return () => observer.disconnect();
   }, []);
 
+  const handleFormChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setSubmitted(true);
+  };
+
+  const resetForm = () => {
+    setForm(emptyForm);
+    setSubmitted(false);
   };
 
   return (
@@ -187,44 +198,67 @@ export default function Volunteer() {
             {submitted ? (
               <div className="volunteer-form-success">
                 <span className="material-symbol">check_circle</span>
-                <h3>Thank You!</h3>
-                <p>We have received your application. Our team will reach out to you soon.</p>
+                <h3>Thank You, {form.name.split(" ")[0] || "Friend"}!</h3>
+                <p>We have received your application{form.interest ? ` for ${form.interest}` : ""}. Our team will reach out to you soon.</p>
+                <button type="button" className="btn-primary-glass" onClick={resetForm}>
+                  Submit Another Application
+                  <span className="material-symbol">restart_alt</span>
+                </button>
               </div>
             ) : (
               <form className="volunteer-form" onSubmit={handleSubmit}>
                 <div className="volunteer-form-row">
                   <div className="volunteer-form-group">
                     <label>Full Name *</label>
-                    <input type="text" required placeholder="Your full name" />
+                    <input name="name" type="text" required placeholder="Your full name" value={form.name} onChange={handleFormChange} />
                   </div>
                   <div className="volunteer-form-group">
                     <label>Email Address *</label>
-                    <input type="email" required placeholder="your@email.com" />
+                    <input name="email" type="email" required placeholder="your@email.com" value={form.email} onChange={handleFormChange} />
                   </div>
                 </div>
                 <div className="volunteer-form-row">
                   <div className="volunteer-form-group">
                     <label>Phone Number</label>
-                    <input type="tel" placeholder="+91 98765 43210" />
+                    <input name="phone" type="tel" placeholder="+91 98765 43210" value={form.phone} onChange={handleFormChange} />
                   </div>
                   <div className="volunteer-form-group">
+                    <label>City</label>
+                    <input name="city" type="text" placeholder="e.g. Mumbai" value={form.city} onChange={handleFormChange} />
+                  </div>
+                </div>
+                <div className="volunteer-form-row">
+                  <div className="volunteer-form-group">
                     <label>Area of Interest *</label>
-                    <select required>
-                      <option value="">Select an opportunity</option>
+                    <select name="interest" required value={form.interest} onChange={handleFormChange} className={form.interest ? "" : "is-placeholder"}>
+                      <option value="" disabled>Select an opportunity</option>
                       {opportunities.map((opp, i) => (
                         <option key={i} value={opp.title}>{opp.title}</option>
                       ))}
                     </select>
                   </div>
+                  <div className="volunteer-form-group">
+                    <label>Availability *</label>
+                    <select name="availability" required value={form.availability} onChange={handleFormChange} className={form.availability ? "" : "is-placeholder"}>
+                      <option value="" disabled>When can you volunteer?</option>
+                      <option value="Weekends">Weekends</option>
+                      <option value="Weekdays">Weekdays</option>
+                      <option value="Evenings">Evenings</option>
+                      <option value="Flexible - Anytime">Flexible - Anytime</option>
+                    </select>
+                  </div>
                 </div>
                 <div className="volunteer-form-group">
                   <label>Why do you want to volunteer with AFLF? *</label>
-                  <textarea rows={4} required placeholder="Tell us about yourself and why you'd like to join us..."></textarea>
+                  <textarea name="message" rows={4} required placeholder="Tell us about yourself and why you'd like to join us..." value={form.message} onChange={handleFormChange}></textarea>
                 </div>
-                <button type="submit" className="btn-primary-glass">
+                <button type="submit" className="btn-primary-glass volunteer-submit">
                   Submit Application
                   <span className="material-symbol">send</span>
                 </button>
+                <p className="volunteer-form-note">
+                  We respect your privacy. Your details are only used to contact you about volunteering.
+                </p>
               </form>
             )}
           </div>

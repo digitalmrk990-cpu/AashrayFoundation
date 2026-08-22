@@ -415,3 +415,12 @@ section {
     font-size: 16px;
   }
 }
+
+/* ===== JUSTIFIED BODY TEXT (paragraphs only — headlines unchanged) ===== */
+.detail-intro-text p,
+.detail-mission-card p,
+.detail-impact-content p,
+.detail-section-subtitle,
+.detail-cta p {
+  text-align: justify;
+}
