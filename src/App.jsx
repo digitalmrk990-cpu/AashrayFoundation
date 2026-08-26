@@ -3,6 +3,7 @@ import Navbar from './components/Navbar/Navbar';
 import JoinProject from './components/Common/JoinProject';
 import Footer from './components/Footer/Footer';
 import AppRoutes from './routes/AppRoutes';
+import ScrollToTop from './components/Common/ScrollToTop';
 import './styles/global.css';
 import './styles/responsive.css';
 
@@ -14,6 +15,7 @@ function App() {
         v7_relativeSplatPath: true,
       }}
     >
+      <ScrollToTop />
       <Navbar />
       <AppRoutes />
       <JoinProject />
