@@ -6,7 +6,7 @@ const sectors = [
   { name: "Zero Hunger Drive", icon: "restaurant" },
   { name: "Water Conservation", icon: "water_drop" },
   { name: "Women Empowerment", icon: "diversity_3" },
-  { name: "Orphanage", icon: "home_heart" },
+  { name: "Orphanage", icon: "home" },
   { name: "Medical Aid", icon: "medical_services" },
   { name: "Old-Age Homes", icon: "elderly" },
 ];
