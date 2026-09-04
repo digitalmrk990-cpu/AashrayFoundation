@@ -43,7 +43,7 @@
 
 .management-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 28px;
 }
 
@@ -114,9 +114,17 @@
 }
 
 /* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .management-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
 @media (max-width: 768px) {
   .management-team { padding: 40px 16px 60px; }
   .management-team h2 { font-size: 32px; }
-  .management-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 20px; }
-  .management-card-photo { height: 240px; }
+  .management-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .management-card-photo { height: 220px; }
+}
+
+@media (max-width: 480px) {
+  .management-grid { grid-template-columns: 1fr; }
 }

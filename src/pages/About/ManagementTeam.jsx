@@ -6,7 +6,7 @@ const teamMembers = [
   { id: 2, name: "Mr. Mihir Shah", role: "Secretary", photo: "/images/team/a2.jpeg" },
   { id: 4, name: "Mrs. Prachi Dhanawade", role: "Accounts Executive", photo: "/images/team/prachi-dhanawade.jpg" },
   { id: 5, name: "Mr. Deepak Karkera", role: "Team Member", photo: "/images/team/deepak-karkera.jpg" },
-  { id: 6, name: "Ms. Deepa Gupta", role: "Team Member", photo: "/images/team/deepa-gupta.jpg" },
+  
   { id: 7, name: "Mrs. Kshitija Jadhav", role: "Team Member", photo: "/images/team/kshitija-jadhav.jpg" },
   { id: 8, name: "Mrs. Varsha Sakhariya", role: "Team Member", photo: "/images/team/varsha-sakhariya.jpg" },
   { id: 9, name: "Mrs. Pooja Pal", role: "Team Member", photo: "/images/team/pooja-pal.jpg" },
